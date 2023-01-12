@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+<form class="khung">
+    <h1 class="tieude">ĐĂNG KÝ HỌC VIÊN</h1>
+    <table cellspacing="5px" cellpadding="5px">
+        <tr>
+            <th class="text" style="color:blue;">Họ Và tên</th>
+            <td>
+                <label>
+                    <input type="text" name="name">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th class="text"   style="color:blue;">Ngày sinh</th>
+            <td>
+                <label>
+                    <input type="text" name="ngaysinh">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th class="text"   style="color:blue;">Giới tính</th>
+            <td>
+                <label>
+                    <input type="radio" name="gender">Nam
+                    <input type="radio" name="gender">Nữ
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th class="text"   style="color: blue">Địa chỉ</th>
+            <td>
+                <label>
+                    <input type="text" name="diachi" class="diachi">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th  class="text"  style="color: blue">Lớp</th>
+            <td>
+                <label>
+                    <select>
+                        <option>--chọn lớp--</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th class="text"   style="color: blue">Email</th>
+            <td>
+                <label>
+                    <input type="email" name="email">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th class="text"  style="color: blue">Điện thoại</th>
+            <td>
+                <label>
+                    <input type="tel" name="email">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <label>
+                    <button type="submit">Đăng ký</button>
+                    <button type="reset">Nhập lại</button>
+                </label>
+            </td>
+        </tr>
+    </table>
+</form>
+<style>
+    .tieude{
+        background: aqua;
+        color: blue;
+    }
+    .khung{
+        width: 500px;
+        height: 500px;
+        background: khaki;
+    }
+    .diachi{
+        width: 250px;
+        height: 50px;
+    }
+    .text{
+        text-align: left;
+    }
+</style>
+</body>
+</html>
