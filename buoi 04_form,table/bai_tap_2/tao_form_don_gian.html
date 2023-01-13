@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .form {
+            width: 500px;
+            height: 250px;
+            background: white;
+        }
+
+        h1 {
+            background: red;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body style="background: aqua">
+<form class="form">
+    <h1>Sở Thích Của Bạn</h1>
+    <table  >
+        <tr>
+            <th style="text-align: right"> Họ Và tên</th>
+            <td>
+                <input type="text" name="yourname">
+            </td>
+        </tr>
+        <tr>
+            <th style="text-align: right">Email</th>
+            <td>
+                <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <th style="vertical-align: top; text-align: right   ">Sở thích</th>
+            <td>
+                <table>
+                    <tr style="color: red">
+                        <td>
+                            <input type="checkbox" name="hobby">Thể thao
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hobby">Âm nhạc
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hobby">Đọc sách
+                        </td>
+                    </tr>
+                    <tr style="color: red">
+                        <td>
+                            <input type="checkbox" name="hobby">Lướt web
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hobby">Chơi game
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hobby">Điện ảnh
+                        </td>
+                    </tr>
+                    <tr style="color: red">
+                        <td>
+                            <input type="checkbox" name="hobby">Du lịch
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <input type="submit" value="Gửi thông tin" name="Submit form ">
+                <input type="reset" value="Gửi lại" name="Rest form ">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
