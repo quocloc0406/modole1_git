@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <input type="number" id="nhap1">
+  <input type="number" id="nhap2"> <br>
+<button type="button" onclick="Addition()" id="Addition">Addition(+)</button>
+<button type="button" onclick="Subtraction()" id="Subtraction">Subtraction(-)</button>
+<button type="button" onclick="Multiplication()" id="Multiplication">Multiplication(*)</button>
+<button type="button" onclick="Division()" id="Division">Division(/)</button>
+
+<p id="kq"></p>
+
+<script>
+    function Addition() {
+     let so1 = document.getElementById("nhap1").value;
+     let so2 = document.getElementById("nhap2").value;
+     let result= parseInt(so1) + parseInt(so2);
+     document.getElementById("kq").innerText = "result" +result;
+    }
+    function Subtraction() {
+        let so1 = document.getElementById("nhap1").value;
+        let so2 = document.getElementById("nhap2").value;
+        let result= parseInt(so1) - parseInt(so2);
+        document.getElementById("kq").innerText = "result" +result;
+    }
+    function Multiplication() {
+        let so1 = document.getElementById("nhap1").value;
+        let so2 = document.getElementById("nhap2").value;
+        let result= parseInt(so1) * parseInt(so2);
+        document.getElementById("kq").innerText = "result" +result;
+    }
+    function Division() {
+        let so1 = document.getElementById("nhap").value;
+        let so2 = document.getElementById("nhap2").value;
+        let result= parseInt(so1) / parseInt(so2);
+        document.getElementById("kq").innerText = "result :" +result;
+    }
+</script>
+</body>
+</html>

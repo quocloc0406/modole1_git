@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <form >
+     <table>
+         <tr style="text-align:center">
+             <th>Amount</th>
+             <th>Form Currency</th>
+             <th> To Currency</th>
+         </tr>
+         <tr style="text-align:center">
+           <td>
+               <input id="nhap" type="text">
+           </td>
+           <td>
+               <select>
+                   <option>Việt nam</option>
+               </select>
+           </td>
+           <td>
+               <select>
+                   <option>USD</option>
+               </select>
+
+           </td>
+             <td>
+                 <button onclick="convert()" style="background-color: cyan" type="button">Convert</button>
+             </td>
+         </tr>
+     </table>
+     <p id="result"></p>
+   </form>
+
+<script>
+    function convert() {
+    let nhap = document.getElementById("nhap").value;
+
+    let nhaptien=parseInt(nhap);
+
+    let convert = nhaptien/23000;
+
+    document.getElementById('result').innerText = "result :"+convert;
+    }
+
+</script>
+</body>
+</html>
