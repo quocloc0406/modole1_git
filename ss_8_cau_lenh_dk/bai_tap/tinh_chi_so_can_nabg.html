@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let chieucao = parseInt(prompt("vui lòng nhập chiều cao"))
+      let cannang = parseInt(prompt("vui lòng nhập cân nặng"))
+
+      let bmi = cannang / (chieucao*chieucao)
+
+      if (bmi < 18.5){
+          alert("Underweight")
+      }else if (18.5 <= bmi <25.0){
+          alert("normal")
+      }else if (26.0 <= bmi < 30.0){
+          alert("Overweight")
+      }else if (30.0 <= mbi){
+          alert("obese")
+      }else {
+          alert("undfine")
+      }
+  </script>
+</body>
+</html>

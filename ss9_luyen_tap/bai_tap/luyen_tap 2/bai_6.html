@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    <p>số a :<input type="text" id="a"></p>
+    <p>số b :<input type="text" id="b"></p>
+    <button type="button" id="click" onclick="tinh()">Kết quả</button>
+</form>
+<p id="in"></p>
+  <script>
+      function tinh() {
+
+          let a =parseInt(document.getElementById("a").value)
+          let b =parseInt(document.getElementById("b").value)
+          if (a == 0 && b==0){
+              document.getElementById("in").innerText = "phương trình có vô số nghiệm"
+          }else if (a !=0 && b == 0){
+             document.getElementById("in").innerText = "Phương trình có nghiệm x=0"
+          }else if (a == 0 && b != 0){
+              document.getElementById("in").innerText = "phương trình vô nghiệm"
+          }else {
+              document.getElementById("in").innerText = "phương trình có nghiệm x = "+(-b/a);
+          }
+
+      }
+  </script>
+</body>
+</html>

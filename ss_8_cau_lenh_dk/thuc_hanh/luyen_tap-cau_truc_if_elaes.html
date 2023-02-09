@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let nhapten = prompt("vui lòng nhập tên");
+
+       if (nhapten == "admin"){
+           let matkhau = prompt("vui lòng nhập mật khẩu")
+           if (matkhau == "theMaster"){
+               alert("Welcome")
+           }else if (matkhau == null){
+             alert("canceled")
+           }else {
+               alert("I don’t know you")
+           }
+       }else if (nhapten == null){
+           alert("canceld")
+       }else {
+           alert('I don’t know you');
+       }
+   </script>
+</body>
+</html>

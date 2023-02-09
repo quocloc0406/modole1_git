@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let diemkiemtra = +prompt("vui lòng nhập điểm kiểm tra :")
+        let diemgiuaky = +prompt("vui lòng nhập số điểm giữa kỳ :")
+        let diemcuoiky = +prompt("vui lòng nhập điểm thi cuối kỳ")
+
+        let tongdiem = diemkiemtra + diemgiuaky + diemcuoiky
+
+        if (tongdiem <= 10){
+            alert( "tổng điểm của bạn là :"+tongdiem+  "bạn học sinh trung bình")
+        }else if (tongdiem >10 && tongdiem < 20){
+            alert("tổng điểm của bạn là :"+tongdiem+  "bạn học sinh khá")
+        }else if (tongdiem >=20){
+            alert( "tổng điểm của bạn là :"+tongdiem+  "bạn học sinh giỏi")
+        }
+    </script>
+</body>
+</html>
