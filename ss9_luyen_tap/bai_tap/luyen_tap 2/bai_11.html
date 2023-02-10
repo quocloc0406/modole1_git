@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>thu nhập tính thuế/thang(triệu đồng)</th>
+        <th>Thuế Suất</th>
+    </tr>
+    <tr>
+        <th>0-5</th>
+        <th>5%</th>
+    </tr>
+    <tr>
+        <th>Trên 05 đến 10</th>
+        <th>10%</th>
+    </tr>
+    <tr>
+        <th>trên 10 đến 18</th>
+        <th>15%</th>
+    </tr>
+    <tr>
+        <th>trên 18 đến 32</th>
+        <th>20%</th>
+    </tr>
+    <tr>
+        <th>trên 32 đến 52</th>
+        <th>25%</th>
+    </tr>
+    <tr>
+        <th>trên 52 đến 80</th>
+        <th>30%</th>
+    </tr>
+    <tr>
+        <th>trên 80</th>
+        <th>35%</th>
+    </tr>
+</table>
+<input type="text" id="nhap" placeholder="Nhập số tiền của bạn vào">
+<button type="button" onclick="tinh()">Tính</button>
+<p id="xuat"></p>
+   <script>
+     function tinh() {
+       let tinhtien = document.getElementById("nhap").value;
+
+       let tinhbac1 = (tinhtien*5)/100
+       let tinhbac2 = (tinhtien*10)/100
+       let tinhbac3 = (tinhtien*15)/100
+       let tinhbac4 = (tinhtien*20)/100
+       let tinhbac5 = (tinhtien*25)/100
+       let tinhbac6 = (tinhtien*30)/100
+       let tinhbac7 = (tinhtien*35)/100
+
+       if (tinhtien >= 5000000){
+           document.getElementById("xuat").innerText = "thuế thu nhập bạn cần trả là :" +tinhbac1;
+       }else if(tinhtien > 5000000 && tinhtien >= 10000000){
+           document.getElementById("xuat").innerText = " thuế thu nhập bạn cần trả là :" +tinhbac2
+       }else if (tinhtien >10000000 && tinhtien >= 18000000){
+           document.getElementById("xuat").innerText = "thuế thu nhập bạn cần trả là :" +tinhbac3;
+       }else if (tinhtien > 18000000 && tinhtien >=32000000){
+           document.getElementById("xuat").innerText = "thuế thu nhập bạn cần trả là : " +tinhbac4;
+       }else if (tinhtien > 32000000 && tinhtien >= 5200000){
+           document.getElementById("xuat").innerText = "thuế thu nhập bạn cần trả là :" +tinhbac5;
+       }else if (tinhtien > 52000000 && tinhtien >= 8000000){
+           document.getElementById("xuat").innerText = "thuế thu nhập bạn cần trả là :" +tinhbac6;
+       }else if (tinhtien < 80000000){
+           document.getElementById("xuat").innerText = "thuế thu nhập bạn cần trả là :" +tinhbac7;
+       }
+     }
+   </script>
+</body>
+</html>

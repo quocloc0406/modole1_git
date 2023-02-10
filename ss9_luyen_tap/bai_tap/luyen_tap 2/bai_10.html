@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>bậc điện</th>
+        <th>Giá bán điện (đồng/kwh)</th>
+    </tr>
+    <tr>
+        <th>Bậc 1 : cho kWh từ 0-50</th>
+        <th>1.549</th>
+    </tr>
+    <tr>
+        <th>Bậc 2 : cho kWh từ 51-100</th>
+        <th>1.600</th>
+    </tr>
+    <tr>
+        <th>bậc 3 : cho từ kWh 101-200</th>
+        <th>1.858</th>
+    </tr>
+    <tr>
+        <th>Bậc 4 : cho từ kWh 201-300</th>
+        <th>2.340</th>
+    </tr>
+    <tr>
+        <th>Bậc 5 : cho từ kWh 301-400</th>
+        <th>2.615</th>
+    </tr>
+    <tr>
+        <th>bậc 6 : Cho từ kWh từ 401 trở lên</th>
+        <th> 2.271</th>
+    </tr>
+    <tr></tr>
+</table>
+<input type="text" id="nhap" placeholder="Nhập số kWh vào">
+<button type="button" onclick="tinh()">Tính</button>
+<p id="xuat"></p>
+  <script>
+      function tinh(){
+          let tinhgia = document.getElementById("nhap").value;
+
+          let tinhbac1 = tinhgia * 1.549
+          let tinhbac2 = tinhgia * 1.600
+          let tinhbac3 = tinhgia * 1.858
+          let tinhbac4 = tinhgia * 2.340
+          let tinhbac5 = tinhgia * 2.615
+          let tinhbac6 = tinhgia * 2.701
+
+
+          if (tinhgia > 0 && tinhgia <50){
+              document.getElementById("xuat").innerText = "tiền điện của bạn là : " +tinhbac1
+          }else if (tinhgia >51 && tinhgia < 100){
+              document.getElementById("xuat").innerText = "tiền điện của bạn là :" +tinhbac2
+          }else if (tinhgia > 101 && tinhgia < 200){
+              document.getElementById("xuat").innerText = "tiền điện của bạn là :" +tinhbac3
+          }else if (tinhgia > 201 && tinhgia < 300){
+              document.getElementById("xuat").innerText = "tiền điện của bạn là :" +tinhbac4
+          }else if (tinhgia > 301 && tinhgia < 400) {
+              document.getElementById("xuat").innerText = "tiền điện của bạn là :" +tinhbac
+          }else if (tinhgia > 401){
+              document.getElementById("xuat").innerText = "tiền điện của bạn là :" +tinhbac6
+          }
+
+      }
+  </script>
+</body>
+</html>
