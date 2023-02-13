@@ -6,13 +6,17 @@
 </head>
 <body>
    <script>
-       let nhan = +prompt("nhập vào 1 số bất kỳ")
-       let s = 0;
-       while (nhan !== -1){
-           document.write("số bạn nhập là :");
-           alert(nhan);
-           s+= nhan
+       let sout;
+       sout = "<table border='1' width='1000' cellspacing='0' cellpadding='3'>"
+       for (j = 1; j < 10; j++) {
+           sout = sout + "<tr>" ;
+           for (i = 2; i < 10; i++) {
+               sout = sout +"<td>" + i + " x " +j+" = "+ j * i + "</td>";
+           }
+           sout = sout + "</tr>";
        }
+       sout = sout + "</table>";
+       document.write(sout);
    </script>
 </body>
 </html>
