@@ -5,32 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-    <form>
-        <h3>Nhập số tiền cần vay :</h3>
-        <input id="nhap" type="text">
-        <h3>vui chọn gói tháng vay :</h3>
-        <input id="3thang" type="radio" value="3 tháng">3 tháng <br>
-        <input id="6thang" type="radio" value="6 tháng">6 tháng <br>
-        <input id="9thang" type="radio" value="9 tháng">9 tháng <br>
-        <input id="12thang" type="radio" value="12 tháng">12 tháng<br>
-        <button onclick="tinh()" type="button" style="margin-top: 10px">tính</button>
-    </form>
+<form action="">
+    <input type="text" id="tien" placeholder="nhập sô tiền cần vay"> <br>
+    <input type="radio"> 3 tháng <br>
+    <input type="radio"> 6 tháng <br>
+    <input type="radio"> 9 tháng <br>
+    <button type="button" onclick="btn()">Tính</button>
     <p id="xuat"></p>
+</form>
 <script>
-      function thang3() {
-         let sotien = document.getElementById(nhap).value;
-         let thang = parseInt(document.getElementById("3thang"))
+    let tiennhap = document.getElementById("tien").value;
+    function btn() {
 
+    }
 
-          if (sotien < 10000000){
-              let tinh = (sotien*0.3) / 3;
-              document.getElementById("xuat").innerText = "số tiền lãi của bạn là : " +tinh;
-          }else if (sotien > 10000000) {
-              let tinh = (sotien * 0.5) / 3
-              document.getElementById("xuat").innerText = "số tiền lãi của bạn là :" +tinh;
-          }
-      }
-      fun
 
 </script>
 </body>

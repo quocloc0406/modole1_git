@@ -6,15 +6,47 @@
 </head>
 <body>
    <script>
-       let h = 5;
-       for (let i = 1; i <= h ; i++) {
-
-           for (let j = 1; j <= i; j++) {
-               document.write("*" )
+       for (let i = 0; i<5; i++){
+           for (let j=0;j<=i;j++){
+               let sao = "*"
+               document.write(sao)
            }
            document.write("<br>")
        }
 
+       document.write("<br><br>")
+
+       for (let i = 5; i>0; i--){
+           for (let j=0;j<i;j++){
+               let sao = "*"
+               document.write(sao)
+           }
+           document.write("<br>")
+       }
+
+       document.write("<br><br>")
+
+       for (let i = 4; i >= 0; i--) {
+           for (k = 0; k < i; k++) {
+               document.write("&nbsp&nbsp");
+           }
+           for (let j = 4; j >= i; j--) {
+               document.write("*")
+           }
+           document.write("<br>");
+       }
+
+       document.write("<br><br>")
+
+       for (let i = 0; i <= 4; i++) {
+           for (k = 0; k < i; k++) {
+               document.write("&nbsp&nbsp");
+           }
+           for (let j = 4; j >= i; j--) {
+               document.write("*")
+           }
+           document.write("<br>");
+       }
    </script>
 </body>
 </html>
